@@ -69,8 +69,10 @@ streamlit run app.py
 ```
 
 * Select your admin role from the dropdown.
-* Upload a CSV file (Sample file given named "student_data.csv").
+* Upload CSV file (Sample file given named "student_data.csv").
 * Ask questions in the chat box!
+* For different admin roles same query will give different answers (as shown in the sample-video)
+* You can ask any relatable ques of csv provided. (for sample ques please refer the sample-video)
 
 ---
 
@@ -89,7 +91,8 @@ streamlit run app.py
 |   └──app.py           # Streamlit main app
 ├── .env                # (add your OpenAI API Key here)
 ├── requirements.txt
-└──student_data.csv
+├── Sample-Run Video.webm
+└── student_data.csv
 ```
 
 ---
