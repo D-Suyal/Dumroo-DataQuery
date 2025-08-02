@@ -6,9 +6,23 @@ A Streamlit-based application for role-based CSV data analysis powered by OpenAI
 
 ## Features
 
-* **Role-based access:** Only see data relevant to your admin role.
-* **Conversational querying:** Chat interface for asking questions about uploaded CSV data.
-* **OpenAI GPT-4o integration:** Natural language processing for smart data analysis.
+* **Natural Language Querying:**
+  Ask questions in plain English (e.g., “Which students haven’t submitted their homework yet?”) and get instant, relevant, filtered data from your uploaded CSV.
+
+* **Role-Based Data Access:**
+  Each admin can only access data within their assigned grade, class, or region. Super admin privileges are restricted to maintain strict data boundaries.
+
+* **Contextual Student Insights:**
+  View student activity, quiz scores, homework submission statuses, and schedules—always filtered by your admin role.
+
+* **Streamlit Interface:**
+  Simple chat-based UI: upload CSV, select your role, and chat with the AI to interact with your data.
+
+* **AI-Powered Data Parsing:**
+  Powered by OpenAI’s GPT-4o and LangChain for intelligent, context-aware responses to your queries.
+
+* **Modular & Extendable:**
+  Easily adapt to use a different data source (CSV/JSON) or connect to a real database in the future.
 
 ---
 
@@ -63,8 +77,7 @@ streamlit run app.py
 ## Project Structure
 
 ```
-.
-├── app.py                # Streamlit main app
+|
 ├── src
 |   ├──avatars/          # Avatar images for roles (e.g., dumroo_assistant.png)
 |   |   └──dumroo_assistant.png
@@ -73,8 +86,8 @@ streamlit run app.py
 |   │   ├── chat.py
 |   │   ├── llm.py
 |   │   └── roles.py
-|   └──app.py
-├── .env                  # (add your OpenAI API Key here)
+|   └──app.py           # Streamlit main app
+├── .env                # (add your OpenAI API Key here)
 ├── requirements.txt
 └──student_data.csv
 ```
